@@ -3614,7 +3614,7 @@ table.alt tbody tr td {
 #banner input[type="button"].primary:hover,
 #banner button.primary:hover,
 #banner .button.primary:hover {
-  color: #4A74C9 !important;
+  color: #B8B8B8 !important;
 }
 
 #banner input[type="submit"].primary:hover:before,
@@ -3622,7 +3622,7 @@ table.alt tbody tr td {
 #banner input[type="button"].primary:hover:before,
 #banner button.primary:hover:before,
 #banner .button.primary:hover:before {
-  color: #4A74C9;
+  color: #B8B8B8;
 }
 
 #banner header.major h1:after, #banner header.major h2:after, #banner header.major h3:after {
