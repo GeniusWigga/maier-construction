@@ -3534,7 +3534,6 @@ table.alt tbody tr td {
 
 /* Banner */
 #banner {
-  background-color: #4C4C4C;
   color: #D2DCF2;
   display: -moz-flex;
   display: -webkit-flex;
@@ -3550,7 +3549,8 @@ table.alt tbody tr td {
   justify-content: center;
   padding: 9em 4em 5em 4em;
   min-height: 65vh;
-  background: #4C4C4C;
+  overflow: hidden;
+  position: relative;
   text-align: center;
 }
 
@@ -3962,6 +3962,12 @@ body.has-theme-bar #theme-bar {
   color: #4C4C4C;
 }
 
+#main-wrapper {
+  max-width: 1600px;
+  margin: auto;
+  position: relative;
+}
+
 #main.imprint-wrapper {
   box-sizing: border-box;
   margin: 0 auto;
@@ -3973,19 +3979,73 @@ body.has-theme-bar #theme-bar {
   background: transparent;
 }
 
+.logo {
+  fill: white;
+  width: 150px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.hero-img {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#banner .major {
+  z-index: 1;
+}
+
+@media screen and (max-width: 1600px) {
+  #banner {
+    box-sizing: border-box;
+    overflow: hidden;
+    min-height: 700px;
+  }
+}
+
 @media screen and (max-width: 1280px) {
+  .hero-img {
+    width: 100%;
+    height: auto;
+  }
+
+  #banner {
+    min-height: 488px;
+  }
+
   .slider {
     padding-bottom: 2em;
+  }
+
+  .logo {
+    left: 20px;
+    top: 20px;
   }
 }
 
 @media screen and (max-width: 980px) {
+  .hero-img {
+    width: auto;
+    height: 100%;
+  }
+
   .slider {
     padding: 2em;
   }
 }
 
 @media screen and (max-width: 736px) {
+  .logo {
+    width: 80px;
+  }
+
   .contact .inner {
     flex-direction: column;
   }
