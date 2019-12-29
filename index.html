@@ -6,6 +6,7 @@
   <title>Oliver Maier Spenglerei</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link href="style/style.css" rel="stylesheet">
 </head>
 
@@ -64,6 +65,19 @@
         </section>
       </div>
     </section>
+    <section class="slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img class="swiper-slide-img" src="img/IMG-20170908-WA0038.jpg" /></div>
+          <div class="swiper-slide"><img class="swiper-slide-img" src="img/IMG-20170908-WA0047.jpg" /></div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+    </section>
     <section id="cta" class="contact special">
       <header class="major">
         <h2>Kontakt</h2>
@@ -98,5 +112,23 @@
     </footer>
   </div>
 </div>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script>
+  var mySwiper = new Swiper('.swiper-container', {
+    centeredSlides: true,
+    direction: 'horizontal',
+    slidesPerView: 1,
+    spaceBetween: 10,
+
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
+</script>
 </body>
 </html>
