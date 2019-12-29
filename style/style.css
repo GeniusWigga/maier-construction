@@ -3948,6 +3948,31 @@ body.has-theme-bar #theme-bar {
   margin: 0;
 }
 
+.back {
+  padding-bottom: 2em;
+}
+
+.link {
+  color: #8F8F8F;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #4C4C4C;
+}
+
+#main.imprint-wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 2em;
+}
+
+#main.imprint-wrapper .inner {
+  background: transparent;
+}
+
 @media screen and (max-width: 1280px) {
   .slider {
     padding-bottom: 2em;
